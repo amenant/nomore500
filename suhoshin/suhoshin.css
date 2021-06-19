@@ -20,6 +20,10 @@ h3 {
     padding: 0;
 }
 
+ul {
+	margin: 0;
+}
+
 ul li {
 	list-style-type: none;
     display: inline;
@@ -27,13 +31,12 @@ ul li {
 
 nav {
     border-bottom: 1px solid #000;
-    position: fixed;
+    position: sticky;
     top: 0;
     width: 100%;
     background: #fff;
     text-align: center;
-    z-index: 10;
-    
+	padding: 20px 0;
 }
 
 nav a {
@@ -46,7 +49,6 @@ nav a {
 .title {
     background-image: url("images/title-background.png");
     background-size: cover;
-    margin-top: 70px;
 }
 
 .logo {
