@@ -80,7 +80,7 @@ nav a {
     font-size: 12px;
 }
 
-.characters {
+.characters, .platforms {
     background: #154d8c;
     color: #fff;
     overflow: hidden;
@@ -148,4 +148,20 @@ nav a {
     .title {
         margin-top: 0;
     }
+	
+	.trailer { 
+		overflow: hidden;
+		padding-bottom: 56.25%;
+		position: relative;
+		height: 0;
+	}
+
+	.trailer iframe {
+		left: 0;
+		top: 0;
+		height: 100%;
+		width: 100%;
+		position: absolute;
+	}
+
 }
