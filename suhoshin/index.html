@@ -1,171 +1,171 @@
 <!doctype html>
-<html lang="en">
-
+<html>
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Suhoshin - Wishlist on Steam</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Suhoshin - Wishlist on Steam</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        container: {
+            screens: {
+                'sm': '640px',
+                'md': '768px',
+                'lg': '1024px',
+                'xl': '1280px',
+            }
+        }
+      }
+    }
+  </script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-DNY68XGHSH"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-    <link href="https://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext" rel="stylesheet" type="text/css">
-    <link href="https://unpkg.com/swiper/swiper-bundle.min.css" rel="stylesheet">
-    <link href="suhoshin.css" rel="stylesheet">
-
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DNY68XGHSH"></script>
-
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'G-DNY68XGHSH');
-    </script>
+    gtag('config', 'G-DNY68XGHSH');
+  </script>
 </head>
-
 <body>
-
-    <nav id="home">
-        <ul>
-            <li><a href="#title">Home</a></li>
-            <li><a href="#story">Story</a></li>
-            <li><a href="#characters">Characters</a></li>
-            <li><a href="#screenshots">Screenshots</a></li>
-			<li><a href="#platforms">Platforms</a></li>
-        </ul>
-    </nav>
-    <div id="title" class="title">
-        <img src="images/logo.png" class="logo" />
-    </div>
-    <div id="story" class="story section">
-        <h2>Story</h2>
-        <div class="panel">
-			<p>Yuri is a young man that recently became a guard. After a long period of absence he is back home, but a few dramatic events disturb the tranquility of the village: people are getting killed mysteriously.</p>
-			<p>Yuri is asked to investigate but quickly finds out that the problem is bigger than he initially thought.</p>
-			<p>From his choices will depend the story!</p>
-			
-			<div class="trailer">
-				<iframe width="560" height="315" src="https://www.youtube.com/embed/6fYaQs1CVPg" title="Suhoshin story trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-			</div>
+  <div class="h-screen pb-14">
+    <!--Nav-->
+    <div class="w-full container mx-auto p-4">
+        
+      <div class="w-full flex items-center justify-between">
+        <a class="flex items-center no-underline hover:no-underline" href="https://www.nomore500.com">
+          <img src="images/no-more-500-logo.png" alt="No More 500 Logo" width="300"/>
+        </a>
+        
+        <div class="flex w-1/2 justify-end content-center">		
+          <a class="inline-block text-blue-300 no-underline text-center p-2" href="https://twitter.com/suhoshin_game">
+            <img src="images/twitter-icon.png" alt="Twitter icon" class="w-8" />
+          </a>
+          <a class="inline-block text-blue-300 no-underline text-center p-2" href="https://www.youtube.com/channel/UCP_Zfd0GRTcVO8mJ0QXYxNA">
+            <img src="images/youtube-icon.png" alt="Youtube icon" class="w-8" />
+          </a>
         </div>
-    </div>
-    <div id="characters" class="characters section">
-        <h2>Characters</h2>
-        <div class="panel">
-            <div class="swiper-container swipe-container-horizontal">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="character">
-                            <img src="images/yuri.png" alt="Yuri character" />
-                            <div class="quote">
-                                <h3>Yuri</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="character">
-                            <img src="images/sooah.png" alt="Soo Ah character" />
-                            <div class="quote">
-                                <h3>Soo Ah</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="character">
-                            <img src="images/yunbok.png" alt="Yun Bok character" />
-                            <div class="quote">
-                                <h3>Yun Bok</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="character">
-                            <img src="images/kim.png" alt="Mr Kim character" />
-                            <div class="quote">
-                                <h3>Mr Kim</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="character">
-                            <img src="images/yuna.png" alt="Yuna character" />
-                            <div class="quote">
-                                <h3>Yuna</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="character">
-                            <img src="images/lee.png" alt="Mr Lee character" />
-                            <div class="quote">
-                                <h3>Mr Lee</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="character">
-                            <img src="images/eunseo.png" alt="Eun Seo character" />
-                            <div class="quote">
-                                <h3>Eun Seo</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="character">
-                            <img src="images/lady.png" alt="Lady character" />
-                            <div class="quote">
-                                <h3>Lady</h3>
-                            </div>
-                        </div>
-                    </div>
-					<div class="swiper-slide">
-                        <div class="character">
-                            <img src="images/monk.png" alt="Monk character" />
-                            <div class="quote">
-                                <h3>Monk</h3>
-                            </div>
-                        </div>
-                    </div>
-					<div class="swiper-slide">
-                        <div class="character">
-                            <img src="images/baksu.png" alt="Baksu character" />
-                            <div class="quote">
-                                <h3>Baksu</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-            </div>
-
-        </div>
-    </div>
-    <div id="screenshots" class="screenshots section">
-        <h2>Screenshots</h2>
-        <div class="panel">
-            <a href="images/screenshots/Soo-Ah-in-yangban-screenshot.png"><img src="images/screenshots/Soo-Ah-in-yangban-screenshot-small.png" class="screenshot-img" /></a>
-            <a href="images/screenshots/Lady-and-Yuri-night-time-screenshot.png"><img src="images/screenshots/Lady-and-Yuri-night-time-screenshot-small.png" class="screenshot-img" /></a>
-            <a href="images/screenshots/Yuri-in-village-screenshot.png"><img src="images/screenshots/Yuri-in-village-screenshot-small.png" class="screenshot-img" /></a>
-        </div>
-		<div class="panel">
-            <a href="images/screenshots/Monk-in-temple-screenshot.png"><img src="images/screenshots/Monk-in-temple-screenshot-small.png" class="screenshot-img" /></a>
-            <a href="images/screenshots/Kim-and-Lee-in-Gwana-screenshot.png"><img src="images/screenshots/Kim-and-Lee-in-Gwana-screenshot-small.png" class="screenshot-img" /></a>
-        </div>
-    </div>
-	<div id="platforms" class="platforms section">
-        <h2>Platforms</h2>
-        <iframe src="https://store.steampowered.com/widget/1679700/" frameborder="0" width="646" height="190"></iframe>
-    </div>
-    <div class="mentions section">
-        <div class="panel">
-            <p>&copy; 2020-2021 No More 500 - Character design by Kageyoshi</p>
-            <a href="https://twitter.com/suhoshin_game"><img class="social" src="images/twitter icon.png" width="32" alt="Twitter Suhoshin account" /></a>
-            <a href="https://www.youtube.com/channel/UCP_Zfd0GRTcVO8mJ0QXYxNA"><img class="social" src="images/youtube icon.png" width="32" alt="Youtube No More 500 page" /></a>
-        </div>
+      </div>
     </div>
 
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="suhoshin.js"></script>
+    <!--Suhoshin banner-->
+	  <div class="w-full container mx-auto">
+      <div class="w-full flex items-center justify-between">
+        <img src="images/suhoshin-banner.jpg" />
+      </div>
+        
+    </div>
+
+    <!--Story-->
+	  <div class="w-full container mx-auto p-4">
+      <div class="w-full items-left justify-between flex flex-col">
+        <h2 class="text-3xl tracking-wide uppercase mt-5">Story</h2>
+        <div class="mt-5">
+          <p class="tracking-wide text-xl text-justify">
+            Yuri is a young man that recently became an officer. After a long period of absence he is back home, but a few dramatic events disturb the tranquility of the village: people are getting killed mysteriously. 
+            Yuri is asked to investigate but quickly finds out that the problem is bigger than he initially thought. From his choices will depend the story!
+          </p>
+        </div>
+        <div class="mt-5 flex justify-center">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/6fYaQs1CVPg" title="Suhoshin story trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+
+    <!--Characters-->
+	  <div class="w-full container mx-auto p-4">
+      <div class="w-full items-left justify-between flex flex-col">
+        <h2 class="text-3xl tracking-wide uppercase mt-5">Characters</h2>
+
+        <div class="grid md:grid-cols-5 grid-cols-2 gap-x-1">
+          <div class="relative">
+            <h3 class="text-sm md:text-2xl bg-black opacity-75 text-white p-1 text-center absolute bottom-4 md:bottom-20 w-full">Yuri</h3>
+            <img src="images/characters/yuri.png" alt="Yuri" />
+          </div>
+
+          <div class="relative">
+            <h3 class="text-sm md:text-2xl bg-black opacity-75 text-white p-1 text-center absolute bottom-4 md:bottom-20 w-full">Soo Ah</h3>
+            <img src="images/characters/sooah.png" alt="Soo Ah" />
+          </div>
+
+          <div class="relative">
+            <h3 class="text-sm md:text-2xl bg-black opacity-75 text-white p-1 text-center absolute bottom-4 md:bottom-20 w-full">Yun Bok</h3>
+            <img src="images/characters/yunbok.png" alt="Yun Bok" />
+          </div>
+
+          <div class="relative">
+            <h3 class="text-sm md:text-2xl bg-black opacity-75 text-white p-1 text-center absolute bottom-4 md:bottom-20 w-full">Mr Kim</h3>
+            <img src="images/characters/kim.png" alt="Mr Kim" />
+          </div>
+
+          <div class="relative">
+            <h3 class="text-sm md:text-2xl bg-black opacity-75 text-white p-1 text-center absolute bottom-4 md:bottom-20 w-full">Yuna</h3>
+            <img src="images/characters/yuna.png" alt="Yuna" />
+          </div>
+
+          <div class="relative">
+            <h3 class="text-sm md:text-2xl bg-black opacity-75 text-white p-1 text-center absolute bottom-4 md:bottom-20 w-full">Mr Lee</h3>
+            <img src="images/characters/lee.png" alt="Mr Lee" />
+          </div>
+
+          <div class="relative">
+            <h3 class="text-sm md:text-2xl bg-black opacity-75 text-white p-1 text-center absolute bottom-4 md:bottom-20 w-full">Eun Seo</h3>
+            <img src="images/characters/eunseo.png" alt="Eun Seo" />
+          </div>
+
+          <div class="relative">
+            <h3 class="text-sm md:text-2xl bg-black opacity-75 text-white p-1 text-center absolute bottom-4 md:bottom-20 w-full">Lady</h3>
+            <img src="images/characters/lady.png" alt="Lady" />
+          </div>
+
+          <div class="relative">
+            <h3 class="text-sm md:text-2xl bg-black opacity-75 text-white p-1 text-center absolute bottom-4 md:bottom-20 w-full">Monk</h3>
+            <img src="images/characters/monk.png" alt="Monk" />
+          </div>
+
+          <div class="relative">
+            <h3 class="text-sm md:text-2xl bg-black opacity-75 text-white p-1 text-center absolute bottom-4 md:bottom-20 w-full">Baksu</h3>
+            <img src="images/characters/baksu.png" alt="Baksu" />
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!--Screenshot-->
+	  <div class="w-full container mx-auto p-4">
+      <div class="w-full items-left justify-between flex flex-col">
+        <h2 class="text-3xl tracking-wide uppercase mt-5">Screenshots</h2>
+
+        <div class="grid md:grid-cols-3 grid-cols-2 gap-5 place-content-center mt-5">
+          <a href="images/screenshots/Soo-Ah-in-yangban.png"><img src="images/screenshots/Soo-Ah-in-yangban-small.png"></a>
+          <a href="images/screenshots/Lady-and-Yuri-night-time.png"><img src="images/screenshots/Lady-and-Yuri-night-time-small.png"></a>
+          <a href="images/screenshots/Yuri-in-village.png"><img src="images/screenshots/Yuri-in-village-small.png"></a>
+          <a href="images/screenshots/Monk-in-temple.png"><img src="images/screenshots/Monk-in-temple-small.png"></a>
+          <a href="images/screenshots/Kim-and-Lee-in-Gwana.png"><img src="images/screenshots/Kim-and-Lee-in-Gwana-small.png"></a>
+          <a href="images/screenshots/Flowchart.jpg"><img src="images/screenshots/Flowchart-small.png"></a>
+        </div>
+      </div>
+    </div>
+
+    <!--Platforms-->
+	  <div class="w-full container mx-auto p-4">
+      <div class="w-full">
+        <h2 class="text-3xl tracking-wide uppercase mt-5">Platforms</h2>
+        <div class="w-full flex justify-center">
+          <iframe src="https://store.steampowered.com/widget/1679700/" frameborder="0" class="w-full md:w-1/2 h-52 mt-5"></iframe>
+        </div>        
+      </div>
+    </div>
+
+    <!--Footer-->
+    <div class="w-full container mx-auto p-4">
+      <div class="w-full flex items-center justify-center">
+        <p class="text-sm">© 2020-2021 No More 500 - Character design by Kageyoshi</p>
+      </div>
+    </div>    
+
+  </div>
 </body>
-
 </html>
