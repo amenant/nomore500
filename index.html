@@ -1,16 +1,24 @@
 <!doctype html>
-<html lang="en">
-
+<html>
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>No More 500 - We make games</title>
-
-  <link href="https://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext" rel="stylesheet" type="text/css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-  <link href="styles/global.css" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        container: {
+            screens: {
+                'sm': '640px',
+                'md': '768px',
+                'lg': '1024px',
+                'xl': '1280px',
+            }
+        }
+      }
+    }
+  </script>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-DNY68XGHSH"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -20,48 +28,80 @@
     gtag('config', 'G-DNY68XGHSH');
   </script>
 </head>
-
 <body>
+  <div class="h-screen pb-14">
+    <!--Nav-->
+    <div class="w-full container mx-auto p-4">
+        
+      <div class="w-full flex items-center justify-between">
+        <a class="flex items-center no-underline hover:no-underline" href="https://www.nomore500.com">
+          <img src="images/no-more-500-logo.png" alt="No More 500 Logo" width="300"/>
+        </a>
+        
+        <div class="flex w-1/2 justify-end content-center">		
+          <a class="inline-block text-blue-300 no-underline text-center p-2" href="https://twitter.com/NoMore500Studio">
+            <img src="images/twitter-icon.png" alt="Twitter icon" class="w-8" />
+          </a>
+          <a class="inline-block text-blue-300 no-underline text-center p-2" href="https://www.youtube.com/channel/UCP_Zfd0GRTcVO8mJ0QXYxNA">
+            <img src="images/youtube-icon.png" alt="Youtube icon" class="w-8" />
+          </a>
+        </div>
+      </div>
+    </div>
 
-  <main>
-    <div class="container-fluid text-center">
-
-      <div class="p-lg-5 mx-auto my-5">
-        <img src="images/no-more-500.png" alt="logo no more 500" class="img-fluid" width="600" />
-        <h2>Indie Game Studio</h2>
+    <!--Banner-->
+	  <div class="w-full container mx-auto">
+      <div class="w-full flex items-center justify-between">
+        <img src="images/banner.jpg" />
       </div>
 
-      <div class="row mb-5">
-        <div class="col-md-6 mx-auto">
-          <h2 class="mb-3">Upcoming games</h2>
-          <h3><a href="suhoshin/index.html">Suhoshin - Visual Novel</a></h3>
-          <p class="text-justify">
-            The story takes place at the beginning of the Joseon era, in a small village located to the south east.
-            The player controls Yuri, a young man that recently became a guard.
-            After a long period of absence he is back home, but a few dramatic events disturb the tranquility of the
-            village.
-            Yuri is asked to investigate, but quickly finds out that the problem is bigger than he initially thought.
+      <div class="p-4 mt-10">
+        <div class="mb-2">
+          <p class="px-4 text-xl text-center text-gray-600">
+            No More 500 is a game studio based in France. We are a small team focused on building beautiful games. <br/>
+            Oh, and yes, we love making content about Korea! <br/><br />
+            Check out <a href="suhoshin/index.html" class="text-blue-400">Suhoshin</a>, our first Visual Novel taking place during Joseon era.
           </p>
         </div>
       </div>
+    </div>
 
-      <div class="row">
-        <div class="col-md-6 mx-auto">
-          <h2>Press / Contact</h2>
-          <ul>
-            <li>Twitter <a href="https://twitter.com/suhoshin_game">@Suhoshin_game</a></li>
-            <li>Email <a href="mailto:contact@nomore500.com">contact@nomore500.com</a></li>
-          </ul>
+    <!--Games-->
+	  <div class="w-full container mx-auto">
+      <div class="w-full items-left justify-between flex flex-col">
+        <h2 class="text-xl tracking-wide uppercase mt-10 mb-5">Games</h2>
+
+        <div class="grid md:grid-cols-2 grid-cols-2 gap-x-1">
+          <div class="relative">
+            <a href="suhoshin/index.html"><img src="images/suhoshin.jpg" alt="Suhoshin" /></a>
+
+            <div class="grid md:grid-cols-4 grid-cols-4 gap-x-1 mt-5">
+              <a href="https://store.steampowered.com/app/1679700/Suhoshin/"><img src="images/steam-logo.png" width="100" /></a>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+
+    <!--Screenshot-->
+	  <div class="w-full container mx-auto">
+      <div class="w-full items-left justify-between flex flex-col">
+        <h2 class="text-xl tracking-wide uppercase mt-20 mb-5">Partners</h2>
+
+        <div class="grid md:grid-cols-3 grid-cols-5 gap-5 place-content-center">
+          <a href="https://www.pulsetranslation.com/"><img src="images/pulse-logo.jpg"></a>
         </div>
       </div>
-
     </div>
-  </main>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
-    crossorigin="anonymous"></script>
+    <!--Footer-->
+    <div class="w-full container mx-auto p-4">
+      <div class="w-full flex items-center justify-center">
+        <p class="text-sm">© 2020-2022 No More 500 - For any inquiry, please send us an email to contact@nomore500.com</p>
+      </div>
+    </div>    
 
+  </div>
 </body>
-
 </html>
