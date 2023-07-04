@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>No More 500 - We make games</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        container: {
+            screens: {
+                'sm': '640px',
+                'md': '768px',
+                'lg': '1024px',
+                'xl': '1280px',
+            }
+        }
+      }
+    }
+  </script>
+</head>
+<body>
+  <div class="h-screen pb-14">
+    <!--Nav-->
+    <div class="w-full container mx-auto p-4">
+        
+      <div class="w-full flex items-center justify-between">
+        <a class="flex items-center no-underline hover:no-underline" href="https://www.nomore500.com">
+          <img src="images/no-more-500-logo.png" alt="No More 500 Logo" width="300"/>
+        </a>
+      </div>
+    </div>
+
+	<div class="w-full container mx-auto">
+      <div class="w-full items-left justify-between flex flex-col ml-5 md:ml-0">
+        <h2 class="text-xl tracking-wide uppercase mt-10 mb-5">Mentions légales</h2>
+
+        <div class="grid md:grid-cols-2 grid-cols-2 gap-x-1 place-items-center">
+          <div class="relative">
+		  
+			<p><i>No More 500</i>, SARL au capital de 4 000 €</p>
+            <p>3 place rosa parks, 35135 Chantepie, contact@nomore500.com</p>
+            <p>840 367 197 RCS Rennes</p>
+            <p>Numéro de TVA intracommunaitaire : FR17840367197</p>
+            <p>Directeur de la publication : Alan Menant alan@nomore500.com</p>
+            <p>Hébergement : Github Inc. - 88 Colin P Kelly Jr St San Francisco California 94107</p>		  
+          </div>
+        </div>
+        
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
